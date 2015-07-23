@@ -2,9 +2,17 @@
 An example dropwizard application built with gradle
 
 #Running
-To run this for the first time just use `gradle run`
+Open your terminal
 
-To generate IntelliJ Idea files use `gradle cleanIdea idea`
+If you dont have gradle installed *and your on a mac* first run `brew install gradle`
+
+To run the application just use `gradle run`
+
+Your server will start and be accessible via http://localhost:8080/hello-world
+
+To view your name on the screen got to http://localhost:8080/hello-world?name=YOUR_NAME
+
+To generate IntelliJ Idea files for this application use `gradle cleanIdea idea`
 
 #Gotchas with gradle
 When trying to use `gradle run` you may get some weird errors such as:
