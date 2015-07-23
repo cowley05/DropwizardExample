@@ -22,3 +22,9 @@ When trying to use `gradle run` you may get some weird errors such as:
 this will usually be down to folder structure which has to be:
 
 src -> main -> java -> x.y -> Z.java
+
+#Versions
+java version at time of building: 1.8
+
+gradle version: 2.5
+
