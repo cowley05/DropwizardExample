@@ -1,9 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('test input') {
+    stage('test') {
       steps {
-        input(message: 'enter version number', id: 'version', ok: 'ok', submitter: 'submitter', submitterParameter: 'submitterparam')
+        waitUntil() {
+          fileExists '/dev/null'
+        }
+
       }
     }
   }
